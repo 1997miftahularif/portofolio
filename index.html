@@ -188,7 +188,6 @@
                 <input 
                     type="email" 
                     name="email"
-                    id="email" 
                     placeholder="Masukkan email Anda" 
                     required
                 >
@@ -208,36 +207,28 @@
                 <label>Pesan</label>
                 <textarea 
                     name="message"
-                    id="message" 
                     rows="5" 
                     placeholder="Tulis pesan Anda di sini..." 
                     required
                 ></textarea>
             </div>
 
-            <!-- Redirect setelah submit -->
-            <input 
-                type="hidden" 
-                name="_next" 
-                value="https://yourdomain.com/thank-you.html"
-            >
+			<!-- Anti Spam -->
+			<input
+				type="text"
+				name="_gotcha"
+				style="display:none"
+			>
 
-            <!-- Anti Spam (Honeypot) -->
-            <input 
-                type="text" 
-                name="_gotcha" 
-                style="display:none"
-            >
+			<button
+				type="submit"
+				class="btn btn-primary"
+				style="width: 100%; justify-content: center;"
+			>
+				Kirim Pesan <i class="fas fa-paper-plane"></i>
+			</button>
 
-            <button 
-                type="submit" 
-                class="btn btn-primary" 
-                style="width: 100%; justify-content: center;"
-            >
-                Kirim Pesan <i class="fas fa-paper-plane"></i>
-            </button>
-
-        </form>
+		</form>
 
     	 </div>
 	 </section>
