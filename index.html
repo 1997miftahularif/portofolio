@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miftahul Arif</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Miftahul<span>Arif</span></div>
+        <button class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></button>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="#hero" class="active">Home</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#experience">Pengalaman</a></li>
+                <li><a href="#portfolio">Karya</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-bg-shape"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="status-badge">
+                    <span>Available for Freelance</span>
+                </div>
+                <h1>Creative Visual<span>Specialist & Admin Expert</span></h1>
+                <p>Hai, saya <strong>Miftahul Arif</strong>. Saya membantu brand dan bisnis menciptakan visual yang memukau dengan manajemen proyek yang terstruktur dan rapi.</p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary"><i class="fas fa-rocket"></i> Lihat Karya Saya</a>
+                    <a href="#contact" class="btn btn-secondary"><i class="fas fa-file-download"></i> Download CV</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="hero-image-frame">
+                    <!-- GANTI LINK INI DENGAN FOTO PROFIL ANDA -->
+                    <img src="profil.jpg" alt="Foto Profil Anda">
+                    
+                    <div class="social-sidebar">
+                        <a href="https://www.linkedin.com/in/username-anda" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/username-anda" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.behance.net/username-anda" target="_blank" title="Behance"><i class="fab fa-behance"></i></a>
+                    </div>
+                </div>
+                <div class="decorative-border"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="section-header">
+            <h2>Tentang Saya</h2>
+            <p>Perpaduan antara seni dan keteraturan</p>
+        </div>
+        <div class="card-grid">
+            <div class="card">
+                <i class="fas fa-palette card-icon"></i>
+                <h3>Visual Creative</h3>
+                <p>Expertise dalam desain grafis, branding, dan video editing. Menciptakan visual yang tidak hanya indah tapi juga efektif.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-folder-open card-icon"></i>
+                <h3>Administration</h3>
+                <p>Pengalaman solid dalam administrasi kantor, kearsipan, dan pengelolaan data. Menjamin setiap proyek terdokumentasi rapi.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-trophy card-icon"></i>
+                <h3>Organization/ Community</h3>
+                <p>Memiliki keterlibatan aktif dalam organisasi sosial dengan fokus pada pengembangan ide inovatif serta perencanaan dan pelaksanaan program-program baru yang mendukung kemajuan organisasi dan masyarakat.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="bg-secondary">
+        <div class="section-header">
+            <h2>Pengalaman</h2>
+            <p>Perjalanan karir dan organisasi saya</p>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">2022 - 2026</div>
+                <h3 class="timeline-title">Administration Staff</h3>
+                <p class="timeline-desc">Manajemen Operasional & Tata Usaha, Pengelolaan Data Program, Perencanaan & Laporan Kinerja, Koordinasi Lintas Instansi.</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2020 - 2021</div>
+                <h3 class="timeline-title">Marketing Executive</h3>
+                <p class="timeline-desc">Mengembangkan dan mengimplementasikan strategi pemasaran, Membangun dan mengelola kehadiran online, Membuat konten promosi, Melakukan riset pasar, Menjalin hubungan dengan klien, Mengelola administrasi dan tender, Berpartisipasi dalam pameran dagang.</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2019 - 2020</div>
+                <h3 class="timeline-title">Marketing Communication Support</h3>
+                <p class="timeline-desc">Mendukung perencanaan dan eksekusi kampanye, Mengelola konten digital, Membuat dan mengelola materi pemasaran, Mengelola media sosial, Menjalin hubungan dengan pihak eksternal, Mengkoordinasikan acara.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="section-header">
+            <h2>Hasil Karya</h2>
+            <p>Klik folder untuk melihat koleksi karya saya</p>
+        </div>
+        <div id="folder-container" class="portfolio-grid">
+            <!-- Folder dibuat otomatis JS -->
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="partner-section">
+        <div class="section-header">
+            <h2>Kolaborasi & Brand Partner</h2>
+            <p>Brand dan komunitas yang pernah bekerja sama dengan saya</p>
+        </div>
+        <div class="partner-wrapper">
+            <div class="partner-grid">
+                <img src="Alhamra.JPG" alt="Brand 1" class="partner-logo">
+                <img src="Bk3s.jpg" alt="Brand 2" class="partner-logo">
+                <img src="Caksuro.JPG" alt="Brand 3" class="partner-logo">
+                <img src="Cietv.jpg" alt="Brand 4" class="partner-logo">
+                <img src="Deskranasda.JPG" alt="Brand 5" class="partner-logo">
+                <img src="Dinsos.JPG" alt="Brand 6" class="partner-logo">
+					 <img src="Dispora.JPG" alt="Brand 7" class="partner-logo">
+					 <img src="Gdc.JPG" alt="Brand 8" class="partner-logo">
+					 <img src="Hpi.JPG" alt="Brand 9" class="partner-logo">
+					 <img src="Iye.JPG" alt="Brand 10" class="partner-logo">
+					 <img src="Kd.jpg" alt="Brand 11" class="partner-logo">
+					 <img src="Larazeta.JPG" alt="Brand 12" class="partner-logo">
+					 <img src="NPCI.PNG" alt="Brand 13" class="partner-logo">
+					 <img src="Logosoina.JPG" alt="Brand 14" class="partner-logo">
+					 <img src="Unair.PNG" alt="Brand 15" class="partner-logo">
+					 <img src="Sampul video.jpg" alt="Brand 16" class="partner-logo">
+					 <img src="Aid.jpg" alt="Brand 17" class="partner-logo">
+					 <img src="Kpud.JPG" alt="Brand 18" class="partner-logo">
+					 <img src="Pertuni.JPG" alt="Brand 19" class="partner-logo">
+					 <img src="Potads.JPG" alt="Brand 20" class="partner-logo">
+					 <img src="Relasi.jpg" alt="Brand 21" class="partner-logo">
+					 <img src="Unesa.PNG" alt="Brand 22" class="partner-logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+	 <section id="contact">
+    	 <div class="section-header">
+        	 <h2>Hubungi Saya</h2>
+        	 <p>Punya project menarik? Mari diskusikan.</p>
+    	 </div>
+
+    	 <div class="contact-container">
+        
+        <!-- Formspree Form -->
+        <form 
+            id="contact-form"
+            action="https://formspree.io/f/meoklryn"
+            method="POST"
+        >
+
+            <div class="form-group">
+                <label>Nama Lengkap</label>
+                <input 
+                    type="text" 
+                    name="name"
+                    id="name" 
+                    placeholder="Masukkan nama Anda" 
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input 
+                    type="email" 
+                    name="email"
+                    id="email" 
+                    placeholder="Masukkan email Anda" 
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label>Subjek</label>
+                <input 
+                    type="text" 
+                    name="subject"
+                    placeholder="Judul pesan"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label>Pesan</label>
+                <textarea 
+                    name="message"
+                    id="message" 
+                    rows="5" 
+                    placeholder="Tulis pesan Anda di sini..." 
+                    required
+                ></textarea>
+            </div>
+
+            <!-- Redirect setelah submit -->
+            <input 
+                type="hidden" 
+                name="_next" 
+                value="https://yourdomain.com/thank-you.html"
+            >
+
+            <!-- Anti Spam (Honeypot) -->
+            <input 
+                type="text" 
+                name="_gotcha" 
+                style="display:none"
+            >
+
+            <button 
+                type="submit" 
+                class="btn btn-primary" 
+                style="width: 100%; justify-content: center;"
+            >
+                Kirim Pesan <i class="fas fa-paper-plane"></i>
+            </button>
+
+        </form>
+
+    	 </div>
+	 </section>
+
+    <footer>
+        <p>&copy; 2024 Nama Anda. Crafted with Passion & Precision.</p>
+    </footer>
+
+    <!-- Modal Folder -->
+    <div id="folder-modal" class="gallery-modal">
+        <div class="gallery-content" style="max-width: 1000px;">
+            <div class="gallery-header">
+                <h2 id="folder-title">Nama Folder</h2>
+                <button class="close-gallery" onclick="closeFolderModal()"><i class="fas fa-times"></i></button>
+            </div>
+            <div id="folder-content-grid" class="gallery-grid"></div>
+        </div>
+    </div>
+
+    <!-- Modal Lightbox -->
+    <div id="lightbox-modal" class="lightbox-modal">
+        <button class="lightbox-close" onclick="closeLightbox()"><i class="fas fa-times"></i></button>
+        <button class="lightbox-nav prev" onclick="changeSlide(-1)"><i class="fas fa-chevron-left"></i></button>
+        <button class="lightbox-nav next" onclick="changeSlide(1)"><i class="fas fa-chevron-right"></i></button>
+        
+        <!-- Container untuk Gambar & Video -->
+        <div class="lightbox-img-container">
+            <img id="lightbox-img" src="" alt="Preview">
+            <!-- Video akan ditambahkan dinamis oleh JS di sini -->
+        </div>
+        
+        <div class="lightbox-caption">
+            <h3 id="lightbox-title"></h3>
+            <p id="lightbox-desc"></p>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
