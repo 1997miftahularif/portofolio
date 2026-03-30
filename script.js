@@ -299,3 +299,79 @@ contactForm.addEventListener('submit', (e) => {
     alert(`Terima kasih ${name}! Pesan Anda telah terkirim.`);
     contactForm.reset();
 });
+/* ===========================
+   FORM CONTACT - FORMSPREE
+=========================== */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const form = document.getElementById("contact-form");
+    const status = document.getElementById("form-status");
+
+    if (form) {
+
+        form.addEventListener("submit", async function (event) {
+
+            event.preventDefault();
+
+            const data = new FormData(form);
+
+            try {
+
+                const response = await fetch(
+                    form.action,
+                    {
+                        method: form.method,
+                        body: data,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    }
+                );
+
+                if (response.ok) {
+
+                    status.innerHTML =
+                        "✅ Pesan berhasil dikirim! Saya akan segera membalas.";
+
+                    status.style.color = "#22c55e";
+
+                    form.reset();
+
+                } else {
+
+                    const result = await response.json();
+
+                    if (result.errors) {
+
+                        status.innerHTML =
+                            "❌ " +
+                            result.errors
+                                .map(error => error.message)
+                                .join(", ");
+
+                    } else {
+
+                        status.innerHTML =
+                            "❌ Terjadi kesalahan saat mengirim pesan.";
+
+                    }
+
+                    status.style.color = "#ef4444";
+
+                }
+
+            } catch (error) {
+
+                status.innerHTML =
+                    "❌ Tidak dapat mengirim pesan. Periksa koneksi internet.";
+
+                status.style.color = "#ef4444";
+
+            }
+
+        });
+
+    }
+
+});
