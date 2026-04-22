@@ -97,7 +97,7 @@ function initPortfolio() {
             <div class="folder-card" onclick="openFolder(${index})">
                 <i class="fas ${category.icon} folder-icon"></i>
                 <h3>${category.folderName}</h3>
-                <p>${category.works.length} Projects</p>
+                <p>${category.works.length} Karya</p>
             </div>
         `;
     });
